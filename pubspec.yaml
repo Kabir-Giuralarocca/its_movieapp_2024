@@ -31,15 +31,13 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.3
+  flutter_web_plugins:
+    sdk: flutter
   go_router: ^14.6.1
 
 dev_dependencies:
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
@@ -92,3 +90,46 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flutter_launcher_icons:
+  image_path: 'assets/launcher/app_icon.png'
+  android: 'app_icon'
+  min_sdk_android: 21
+  adaptive_icon_background: '#1D1D1D'
+  adaptive_icon_foreground: 'assets/launcher/app_icon.png'
+  adaptive_icon_foreground_inset: 24
+  adaptive_icon_monochrome: 'assets/launcher/app_icon.png'
+  ios: true
+  remove_alpha_ios: true
+  image_path_ios_dark_transparent: 'assets/launcher/app_icon.png'
+  image_path_ios_tinted_grayscale: 'assets/launcher/app_icon.png'
+  desaturate_tinted_to_grayscale_ios: true
+  background_color_ios: '#1D1D1D'
+  web:
+    generate: true
+    image_path: 'assets/launcher/app_icon.png'
+    background_color: '#1D1D1D'
+    theme_color: '#1D1D1D'
+  windows:
+    generate: true
+    image_path: 'assets/launcher/app_icon.png'
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: 'assets/launcher/app_icon.png'
+
+flutter_native_splash:
+  color: '#1D1D1D'
+  image: 'assets/splash/splash.png'
+  branding_android: 'assets/splash/branding.png'
+  branding_ios: 'assets/splash/branding.png'
+  branding_mode: bottom
+  branding_bottom_padding: 80
+  image_web: 'assets/splash/splash_web.png'
+  android_12:
+    color: '#1D1D1D'
+    image: 'assets/splash/splash_android12.png'
+    branding: 'assets/splash/branding_android12.png'
+  android: true
+  ios: true
+  web: true
+  fullscreen: true

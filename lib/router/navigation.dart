@@ -3,6 +3,9 @@ import 'package:go_router/go_router.dart';
 import 'package:its_movieapp_2024/router/app_routes.dart';
 
 extension Navigation on BuildContext {
+  pushNotFound() => push(AppRoute.notFound.path);
+  goToNotFound() => go(AppRoute.notFound.path);
+
   pushWelcome() => push(AppRoute.welcome.path);
   goToWelcome() => go(AppRoute.welcome.path);
 
