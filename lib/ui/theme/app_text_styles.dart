@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:its_movieapp_2024/ui/theme/app_colors.dart';
 
 class AppTextStyle {
   static const String family = 'Montserrat';
@@ -10,11 +11,27 @@ class AppTextStyle {
     height: 1.17,
   );
 
+  static const TextStyle black32Accent = TextStyle(
+    fontFamily: family,
+    fontSize: 32,
+    fontWeight: FontWeight.w900,
+    height: 1.17,
+    color: AppColor.accent,
+  );
+
   static const TextStyle black24 = TextStyle(
     fontFamily: family,
     fontSize: 24,
     fontWeight: FontWeight.w900,
     height: 1.17,
+  );
+
+  static const TextStyle black24Accent = TextStyle(
+    fontFamily: family,
+    fontSize: 24,
+    fontWeight: FontWeight.w900,
+    height: 1.17,
+    color: AppColor.accent,
   );
 
   static const TextStyle bold24 = TextStyle(

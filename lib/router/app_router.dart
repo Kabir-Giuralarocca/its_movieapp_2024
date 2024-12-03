@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:its_movieapp_2024/router/app_routes.dart';
+import 'package:its_movieapp_2024/ui/screens/welcome_screen.dart';
 
 class AppRouter {
   static final scaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
@@ -15,7 +16,7 @@ class AppRouter {
         parentNavigatorKey: navigatorKey,
         name: AppRoute.welcome.name,
         path: AppRoute.welcome.path,
-        builder: (context, state) => const Placeholder(),
+        builder: (context, state) => const WelcomeScreen(),
       ),
       GoRoute(
         parentNavigatorKey: navigatorKey,
