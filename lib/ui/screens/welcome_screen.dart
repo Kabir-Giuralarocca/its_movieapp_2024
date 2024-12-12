@@ -23,14 +23,11 @@ class WelcomeScreen extends StatelessWidget {
           Center(
             child: SingleChildScrollView(
               padding: const EdgeInsets.symmetric(horizontal: 36),
-              child: Column(children: [
+              child: Column(spacing: 24, children: [
                 const AppTitle.large(),
-                const Padding(
-                  padding: EdgeInsets.symmetric(vertical: 24),
-                  child: Text(
-                    'An app to catalog, track, and explore your favorite movies in a personalized library.',
-                    textAlign: TextAlign.center,
-                  ),
+                Text(
+                  'An app to catalog, track, and explore your favorite movies in a personalized library.',
+                  textAlign: TextAlign.center,
                 ),
                 ElevatedButton(
                   onPressed: () => context.pushSignIn(),

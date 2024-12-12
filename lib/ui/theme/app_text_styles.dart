@@ -104,10 +104,34 @@ class AppTextStyle {
     height: 1.17,
   );
 
+  static const TextStyle regular14Grey = TextStyle(
+    fontFamily: family,
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    height: 1.17,
+    color: AppColor.grey,
+  );
+
   static const TextStyle regular12 = TextStyle(
     fontFamily: family,
     fontSize: 12,
     fontWeight: FontWeight.w400,
     height: 1.17,
+  );
+
+  static const TextStyle regular12Tertiary = TextStyle(
+    fontFamily: family,
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    height: 1.17,
+    color: AppColor.tertiary,
+  );
+
+  static const TextStyle regular12Error = TextStyle(
+    fontFamily: family,
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    height: 1.17,
+    color: AppColor.error,
   );
 }
