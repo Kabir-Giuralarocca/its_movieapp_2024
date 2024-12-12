@@ -9,7 +9,7 @@ class PageDescription extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 64),
+      padding: const EdgeInsets.only(top: 64, bottom: 24),
       child: Column(spacing: 8, children: [
         Text(title, style: AppTextStyle.bold20),
         Text(

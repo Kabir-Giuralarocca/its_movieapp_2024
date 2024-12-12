@@ -58,6 +58,7 @@ class _FormInputState extends State<FormInput> {
           autovalidateMode: AutovalidateMode.onUserInteraction,
           obscureText: _obscureText,
           obscuringCharacter: '●',
+          autofocus: false,
           decoration: InputDecoration(
             hintText: widget.hint,
             suffixIconConstraints: BoxConstraints.tightFor(width: 24, height: 24),

@@ -112,6 +112,14 @@ class AppTextStyle {
     color: AppColor.grey,
   );
 
+  static const TextStyle regular14Accent = TextStyle(
+    fontFamily: family,
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    height: 1.17,
+    color: AppColor.accent,
+  );
+
   static const TextStyle regular12 = TextStyle(
     fontFamily: family,
     fontSize: 12,

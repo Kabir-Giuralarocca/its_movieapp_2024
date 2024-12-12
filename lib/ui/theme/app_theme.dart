@@ -16,6 +16,7 @@ class AppTheme {
     iconTheme: _iconTheme,
     inputDecorationTheme: _inputDecorationTheme,
     textSelectionTheme: _textSelectionTheme,
+    floatingActionButtonTheme: _floatingActionButtonTheme,
   );
 
   static const ColorScheme _colorScheme = ColorScheme(
@@ -62,5 +63,14 @@ class AppTheme {
     cursorColor: AppColor.grey,
     selectionColor: AppColor.white25,
     selectionHandleColor: AppColor.tertiary,
+  );
+
+  static final FloatingActionButtonThemeData _floatingActionButtonTheme = FloatingActionButtonThemeData(
+    foregroundColor: AppColor.black,
+    backgroundColor: AppColor.white,
+    iconSize: 40,
+    hoverColor: AppColor.black25,
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+    sizeConstraints: BoxConstraints.tight(Size(48, 48)),
   );
 }

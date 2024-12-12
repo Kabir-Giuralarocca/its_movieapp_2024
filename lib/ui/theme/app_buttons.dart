@@ -26,4 +26,16 @@ class AppButton {
     minimumSize: const WidgetStatePropertyAll(Size(0, 42)),
     maximumSize: const WidgetStatePropertyAll(Size.fromHeight(42)),
   );
+
+  static ButtonStyle floating = ButtonStyle(
+    backgroundColor: WidgetStatePropertyAll(AppColor.white),
+    shape: WidgetStatePropertyAll(
+      RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+    ),
+    fixedSize: WidgetStatePropertyAll(Size(48, 48)),
+    iconSize: WidgetStatePropertyAll(40),
+    iconColor: WidgetStatePropertyAll(AppColor.black),
+    shadowColor: WidgetStatePropertyAll(AppColor.black25),
+    padding: WidgetStatePropertyAll(EdgeInsets.zero),
+  );
 }
