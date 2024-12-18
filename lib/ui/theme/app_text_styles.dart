@@ -104,6 +104,14 @@ class AppTextStyle {
     height: 1.17,
   );
 
+  static const TextStyle regular14White = TextStyle(
+    fontFamily: family,
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    height: 1.17,
+    color: AppColor.white,
+  );
+
   static const TextStyle regular14Grey = TextStyle(
     fontFamily: family,
     fontSize: 14,

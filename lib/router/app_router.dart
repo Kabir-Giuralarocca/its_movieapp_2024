@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:its_movieapp_2024/router/app_routes.dart';
 import 'package:its_movieapp_2024/ui/screens/signin_screen.dart';
 import 'package:its_movieapp_2024/ui/screens/welcome_screen.dart';
+import 'package:its_movieapp_2024/ui/theme/app_colors.dart';
 
 class AppRouter {
   static final scaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
@@ -34,4 +35,22 @@ class AppRouter {
     ],
     errorBuilder: (context, state) => const Placeholder(),
   );
+
+  static void showSuccessSnackBar(String message) {
+    scaffoldMessengerKey.currentState?.showSnackBar(
+      SnackBar(
+        content: Text(message),
+        backgroundColor: AppColor.success,
+      ),
+    );
+  }
+
+  static void showErrorSnackBar(String message) {
+    scaffoldMessengerKey.currentState?.showSnackBar(
+      SnackBar(
+        content: Text(message),
+        backgroundColor: AppColor.error,
+      ),
+    );
+  }
 }

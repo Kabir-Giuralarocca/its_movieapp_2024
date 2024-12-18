@@ -17,6 +17,8 @@ class AppTheme {
     inputDecorationTheme: _inputDecorationTheme,
     textSelectionTheme: _textSelectionTheme,
     floatingActionButtonTheme: _floatingActionButtonTheme,
+    progressIndicatorTheme: _progressIndicatorTheme,
+    snackBarTheme: snackBarTheme,
   );
 
   static const ColorScheme _colorScheme = ColorScheme(
@@ -72,5 +74,15 @@ class AppTheme {
     hoverColor: AppColor.black25,
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
     sizeConstraints: BoxConstraints.tight(Size(48, 48)),
+  );
+
+  static const ProgressIndicatorThemeData _progressIndicatorTheme = ProgressIndicatorThemeData(
+    color: AppColor.accent,
+    circularTrackColor: AppColor.primary,
+    linearTrackColor: AppColor.primary,
+  );
+
+  static const SnackBarThemeData snackBarTheme = SnackBarThemeData(
+    contentTextStyle: AppTextStyle.regular14White,
   );
 }

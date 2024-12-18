@@ -1,0 +1,29 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "LOCAL its_movieapp_2024",
+			"request": "launch",
+			"type": "dart",
+			"toolArgs": ["--web-port", "5010", "--dart-define-from-file", "env/local.json"]
+		},
+		{
+			"name": "DEV its_movieapp_2024",
+			"request": "launch",
+			"type": "dart",
+			"toolArgs": ["--web-port", "5010", "--dart-define-from-file", "env/development.json"]
+		},
+		{
+			"name": "its_movieapp_2024 (profile mode)",
+			"request": "launch",
+			"type": "dart",
+			"flutterMode": "profile"
+		},
+		{
+			"name": "its_movieapp_2024 (release mode)",
+			"request": "launch",
+			"type": "dart",
+			"flutterMode": "release"
+		}
+	]
+}

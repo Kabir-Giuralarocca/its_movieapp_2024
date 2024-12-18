@@ -1,0 +1,4 @@
+{
+   "env": "development",
+   "baseUrl": "https://moviecatalogapi.azurewebsites.net"
+}
